@@ -16,7 +16,10 @@ var  data = [
 
 
 
-app.get('/', (req, res) => res.send(data))
+app.get('/', (req, res) => {
+	res.setHeader('Content-Type', 'application/json');
+	res.send(JSON.stringify(data))
+	});
 
 
 
