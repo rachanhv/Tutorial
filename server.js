@@ -15,8 +15,12 @@ var  data = [
 ];
 
 
-
 app.get('/', (req, res) => {
+	res.send('Install android app lin bellow ')
+	});
+	
+
+app.get('/posts', (req, res) => {
 	res.setHeader('Content-Type', 'application/json');
 	res.send(JSON.stringify(data))
 	});
